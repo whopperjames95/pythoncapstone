@@ -1,16 +1,15 @@
-{% extends "base.html" %} {% block title %}Home{% endblock %}
+{% extends "base.html" %} {% block title %}Bucket List{% endblock %}
 
 {% block content %}
-
 <script type="text/javascript" src="../static/index.js"></script>
 <br />
-<h1 align="center" id="h1tag">Personal Goals</h1>
+<h1 align="center" id="h1tag">Bucket List</h1>
 <br />
 <ul class="list-group list-group-flush" id="notes">
 
 
     {% for note in user.notes %} 
-    <li id= "note_list_back" class="list-group-item">
+    <li id= "note_list_back"class="list-group-item">
         {{ note.data }}
         <button id="x_button" type="button" class="close" onclick="deleteNote('{{ note.id }}')">
             <span aria-hidden="true">&times;</span>
@@ -19,10 +18,10 @@
     {% endfor %}
 </ul>
 <form method="POST">
-    <textarea name= "note" id="note" class="form-control"></textarea>
+    <textarea id="note" name= "note" id="note" class="form-control"></textarea>
     <br />
     <div align="center">
-        <button type="submit" class="btn btn-primary" id="loginbutton">Add Goal</button>
+        <button type="submit" class="btn btn-primary" id="loginbutton">Add Activity</button>
     </div>
 </form>
 {% endblock %}

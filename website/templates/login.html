@@ -2,28 +2,37 @@
 
 {% block content %}
 <form method="POST">
-<h3 align="center">Login</h3>
+    
+<br />
+<br />
+<h2 align="center" id="h2tag">Your Ambitions Await</h2>
+<br />
+<br />
+<br />
     <div class="form-group">
-        <label for="email">Email</label>
+        <label id="field_label" for="email">Email</label>
         <input 
         type="email" 
         class="form-control"
-        id="email"
+        id="input"
         name="email"
         placeholder="Enter Email"
         />
     </div>
     <div class="form-group">
-        <label for="password1">Passsword</label>
+        <label id="field_label" for="password1">Passsword</label>
         <input 
         type="password" 
         class="form-control"
-        id="password"
+        id="input"
         name="password"
         placeholder="Enter Password"
         />
     </div>
     <br />
-    <button type="submit" class="btn btn-primary">Login</button>
+    <button type="submit" class="btn btn-primary" Id="loginbutton">Login</button> 
+    <br />
+    <br />
+    <br />
 </form>
 {% endblock %}
