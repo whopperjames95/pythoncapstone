@@ -1,0 +1,28 @@
+{% extends "base.html" %} {% block title %}Goals Page{% endblock %}
+
+{% block content %}
+
+<script type="text/javascript" src="../static/index.js"></script>
+<br />
+<h1 align="center" id="h1tag">Personal Goals</h1>
+<br />
+<ul class="list-group list-group-flush" id="notes">
+
+
+    {% for note in user.notes %} 
+    <li id= "note_list_back" class="list-group-item">
+        {{ note.data }}
+        <button id="x_button" type="button" class="close" onclick="deleteNote('{{ note.id }}')">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </li>
+    {% endfor %}
+</ul>
+<form method="POST">
+    <textarea name= "note" id="note" class="form-control"></textarea>
+    <br />
+    <div align="center">
+        <button type="submit" class="btn btn-primary" id="loginbutton">Add Goal</button>
+    </div>
+</form>
+{% endblock %}

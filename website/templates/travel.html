@@ -8,10 +8,10 @@
 <ul class="list-group list-group-flush" id="notes">
 
 
-    {% for note in user.notes %} 
+    {% for note in user.notesss %} 
     <li id= "note_list_back" class="list-group-item">
         {{ note.data }}
-        <button id="x_button" type="button" class="close" onclick="deleteNote('{{ note.id }}')">
+        <button id="x_button" type="button" class="close" onclick="deleteTravel('{{ note.id }}')">
             <span aria-hidden="true">&times;</span>
         </button>
     </li>

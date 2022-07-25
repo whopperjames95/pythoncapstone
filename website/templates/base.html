@@ -18,12 +18,18 @@
       crossorigin="anonymous"
     />
 
+
+    <!-- icon link -->
+    <link rel="stylesheet" 
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
     <title>{% block title %}Home{% endblock %}</title>
 
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: rgb(57, 57, 57)">
-    <!-- <nav class="navbar navbar-expand-lg bg dark" style="background-color: rgb(46, 46, 46)"> -->
+    <nav class="navbar navbar-expand-lg navbar-dark" Id="navbar-grey">
         <button class="navbar-toggler"
                 type="button" 
                 data-toggle="collapse" 
@@ -34,11 +40,13 @@
         <div class="collapse navbar-collapse" id="navbar">
             <div class="navbar-nav">
                 {% if user.is_authenticated %}
-                <a class="nav-item nav-link" id="link" href="/">Personal Goals</a>
+                <a class="nav-item nav-link" id="link" href="/">Home</a>
+                <a class="nav-item nav-link" id="link" href="/personal_goals">Personal Goals</a>
                 <a class="nav-item nav-link" id="link" href="/bucket_list">Bucket List</a>
                 <a class="nav-item nav-link" id="link" href="/travel">Travel Plans</a>
                 <a class="nav-item nav-link" id="logout_link" href="/logout">Logout</a>
                 {% else %}
+                <a class="nav-item nav-link" id="link" href="/">Home</a>
                 <a class="nav-item nav-link" id="link" href="/login">Login</a>
                 <a class="nav-item nav-link" id="link" href="/sign-up">Sign Up</a>
                 {% endif %}

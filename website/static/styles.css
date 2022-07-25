@@ -1,56 +1,57 @@
-body{
-    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBVvL9k1YJKNs0fvwCzSZHfgCzCCZNu-EMHw&usqp=CAU");
-    background-size: cover;
-    height: 100vh;
-    padding: 0;
-    margin: 0;
-}
+
 #loginbutton{
-    background-color: rgb(92, 181, 217);
-    color: black;
+    background-color: rgb(20, 20, 20);
+    border: 2px solid rgb(20, 20, 20);
+    color: white;
 }
-#loginbutton:hover{
-    background-color: black; 
+#loginbutton:hover{ 
     color: white; 
-    border: 2px solid rgb(92, 181, 217);
+    border: 2px solid white;
     transition: all 0.3s ease-in-out;
 }
 
 #note_list_back{
-    background-color: rgb(0, 0, 0);
-    color: rgb(224, 224, 224)
+    background-color: rgb(220, 220, 220);
+    color: rgb(27, 27, 27)
 }
 
 #x_button{
-    color: white;
+    color: rgb(27, 27, 27);
 }
 
 #note{
-    background-color: rgb(224, 224, 224);
+    background-color: rgb(202, 202, 202);
 }
 
 #h1tag{
+    color: rgb(20, 20, 20);
+    font-family: Verdana;
+}
+
+#homeh1{
     color: rgb(92, 181, 217);
     font-family: Verdana;
+    padding-top: 400px;
+    font-size: 70px;
 }
 
 #h2tag{
     font-size: 46px; 
-    color: rgb(92, 181, 217); 
+    color: rgb(20, 20, 20); 
     font-family: verdana
 }
 
 #field_label{
-    color: rgb(92, 181, 217); 
+    color: rgb(20, 20, 20); 
     font-family: Verdana;
 }
 
 #input{
-    background-color: rgb(224, 224, 224);
+    background-color: rgb(202, 202, 202);
 }
 
 #link{
-   color: rgb(92, 181, 217);  
+   color: #a5a5a5;  
 }
 #link:hover{
     color: #FEFEFE;
@@ -64,6 +65,35 @@ body{
     color: #FEFEFE;
     transition: all 0.3s ease-in-out;
 }
+
+#navbar-grey{
+    background-color: rgb(20, 20, 20)
+}
+
+ body
+{
+  text-align: center;
+  background: #141414 url(https://unsplash.it/1228/880?image=302);
+  background-size: cover;
+  background-position: 50%;
+  height: 100vh
+} 
+
+svg{
+  position: absolute;
+  top: 50%;
+  margin-top: -60px;
+  left: 50%;
+  margin-left: -225px
+} 
+
+
+
+
+
+
+
+
 
 
 
