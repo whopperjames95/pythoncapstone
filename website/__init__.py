@@ -2,8 +2,8 @@ from flask import Flask
 from flask_sqlalchemy import SQLAlchemy
 from os import path #will need to delete after postgres
 from flask_login import LoginManager
-
 from flask_migrate import Migrate 
+import os
 
 # app = Flask(__name__)
 app =  Flask(__name__)
